@@ -8,8 +8,9 @@
     font-family: Alt_Gothic;
     src: url('../fonts/Alternate Gothic No2 BT.ttf');
 }
-wrapper{
+.wrapper{
     margin: 0 auto;
+    overflow: hidden;
 }
 .logo{
     font-family:Alt_Gothic;
@@ -31,6 +32,51 @@ header {
 .pink{
     color: #fe2232
 }
+ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+
 li {
+    font-family: Lato_reg;
     list-style-type: none;
+}
+a.nav-link.white:hover {
+    color: #fe2232;
+    text-decoration: none;
+}
+.moto{
+    font-family: Lato_reg;
+    font-size: 38px;
+    text-align: center;
+}
+.login{
+    display: inline-block;
+    padding: 14px 21px 11px;
+    margin-right: 9px;
+    border: 1px solid;
+    border-radius: 6%;
+    box-sizing: border-box;
+}
+.get-listed{
+    display: inline-block;
+    padding: 14px 21px 11px;
+    border: 1px solid;
+    border-radius: 6%;
+    box-sizing: border-box;
+}
+.login:hover,
+.get-listed:hover{
+    background-color: #fe2232;
+    color: #fcfcfc;
+    border: 1px solid #fe2232;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.row.wrapper.align-items-center{
+    margin-bottom: 60px ;
+}
+main.container-fluid{
+    padding: 0;
+    margin: 0;
 }

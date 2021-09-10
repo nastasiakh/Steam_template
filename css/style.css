@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Lato_reg;
+    src: url('../fonts/Lato-Regular.ttf');
+
+    font-family: Lato_bold;
+    src: url('../fonts/Lato-Bold.ttf');
+
+    font-family: Alt_Gothic;
+    src: url('../fonts/Alternate Gothic No2 BT.ttf');
+}
+wrapper{
+    margin: 0 auto;
+}
+.logo{
+    font-family:Alt_Gothic;
+    font-size: 55px ;
+}
+header {
+    padding: 20px 0;
+    background-color: #333333;
+}
+.white{
+    color: #fcfcfc ;
+}
+.lgrey{
+    color: #8e9498
+}
+.dgrey{
+    color: #36393b
+}
+.pink{
+    color: #fe2232
+}
+li {
+    list-style-type: none;
+}

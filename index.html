@@ -33,12 +33,85 @@
 
      </header>
      <main class="container-fluid">
-         <div>
-             <div class="banner">
-                 <img class="img-fluid" src="images/map.png"/>
-             </div>
-             <div class="wrapper"></div>
+         <div class="banner">
+             <img class="img-fluid" src="images/map.png"/>
          </div>
+         <div class="events-list row justify-content-around align-items-center">
+             <nav class="events-tabs ">
+                 <div class="nav nav-tabs container" id="nav-tab" role="tablist">
+                     <a class="nav-link active" id="nav-hot-events-tab" data-toggle="tab" href="#nav-hot-events"
+                        role="tab" aria-controls="nav-home" aria-selected="true">Hot Events</a>
+                     <a class="nav-link" id="nav-trending-events-tab" data-toggle="tab" href="#nav-trending-events"
+                        role="tab" aria-controls="nav-profile" aria-selected="false">Trending Events</a>
+                 </div>
+             </nav>
+             <form class="event-filter row ">
+                 <input type="text" class="" id="event-name" placeholder="Event name"/>
+                 <input type="text" class="" id="customer-location" placeholder="Your location"/>
+             </form>
+         </div>
+
+         <div class="tab-content event-examples container" id="nav-tabContent">
+             <div aria-labelledby="nav-hot-events-tab" class="tab-pane fade show active"
+                  id="nav-hot-events" role="tabpanel">
+                 <div class="row justify-content-between">
+                     <div class="event col-xl-4">
+                         <img src="images/img.png" class="event-img-top" alt="poster">
+                         <div class="event-body">
+                             <h4 class="event-title"><a href="#">Act Big! Ultimate Music  Festival</a></h4>
+                             <p class="event-place"></p>
+                             <p class="event-address"></p>
+                             <p class="event-text">Some quick example text to build on the event title and make up the bulk of the event's content.</p>
+                             <span class="male"></span>
+                             <span class="female"></span>
+                         </div>
+                     </div>
+                     <div class="event col-xl-4">
+                         <img src="images/Layer%2011.png" class="event-img-top" alt="poster">
+                         <div class="event-body">
+                             <h4 class="event-title"><a href="#">event title</a></h4>
+                             <p class="event-place"></p>
+                             <p class="event-address"></p>
+                             <p class="event-text">Some quick example text to build on the event title and make up the bulk of the event's content.</p>
+                             <span class="male"></span>
+                             <span class="female"></span>
+                         </div>
+                     </div>
+                     <div class="event col-xl-4">
+                         <img src="images/Layer%2012.png" class="event-img-top" alt="poster">
+                         <div class="event-body">
+                             <h4 class="event-title"><a href="#">event title</a></h4>
+                             <p class="event-place"></p>
+                             <p class="event-address"></p>
+                             <p class="event-text">Some quick example text to build on the event title and make up the bulk of the event's content.</p>
+                             <span class="male"></span>
+                             <span class="female"></span>
+                         </div>
+                     </div>
+                     <div class="event col-xl-4">
+                         <img src="..." class="event-img-top" alt="...">
+                         <div class="event-body">
+                             <h5 class="event-title"><a href="#">event title</a></h5>
+                             <p class="event-place"></p>
+                             <p class="event-address"></p>
+                             <p class="event-text">Some quick example text to build on the event title and make up the bulk of the event's content.</p>
+                             <span class="male"></span>
+                             <span class="female"></span>
+                         </div>
+                     </div>
+
+                 </div>
+
+             </div>
+
+             <div aria-labelledby="nav-trending-events-tab" class="tab-pane fade" id="nav-trending-events"
+                  role="tabpanel">
+
+             </div>
+         </div>
+
+
+
      </main>
      <footer></footer>
 

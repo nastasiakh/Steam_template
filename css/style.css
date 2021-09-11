@@ -32,6 +32,8 @@ header {
 .pink{
     color: #fe2232
 }
+
+/*HEADER*/
 ul{
     margin-left: 0;
     padding-left: 0;
@@ -76,7 +78,95 @@ a.nav-link.white:hover {
 .row.wrapper.align-items-center{
     margin-bottom: 60px ;
 }
+
+/*MAIN*/
+
 main.container-fluid{
     padding: 0;
     margin: 0;
+    background-color: #f4f4f4;
+}
+.events-list{
+    background-color: #fcfcfc;
+}
+/*nav.events-tabs{*/
+/*    background-color: #fcfcfc;*/
+/*}*/
+.nav-tabs{
+    border: none;
+}
+.nav-tabs .nav-link{
+    font-family: Lato_reg;
+    list-style-type: none;
+    font-size: 16px;
+    color: #8e9498;
+    border: none;
+    font-weight: 600;
+    margin: 0 7px;
+    padding: 25px 7px 25px 5px;
+    display: inline-block;
+    position: relative;
+}
+.nav-tabs .nav-link.active{
+    color: #333333;
+}
+.nav-tabs .nav-link:before{
+    content: "";
+    display: none;
+    position: absolute;
+    background-color: #fe2232;
+    height: 5px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.nav-tabs .nav-link.active:before{
+    display: block;
+}
+.event-examples{
+    padding: 40px 15px;
+}
+.event.col-xl-4{
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+.event:first-child{
+    margin-left: 0;
+    padding-left: 0;
+}
+.event:nth-child(3n+3){
+    margin-right: 0;
+    padding-right: 0;
+}
+.event-body{
+    padding:25px 15px;
+    max-width: 310px;
+}
+.event-title a{
+    color: #000000;
+    font-family: Lato_bold;
+    font-size: 24px;
+    font-weight: 600;
+}
+.event-text{
+    font-size: 14px;
+    font-family: Lato_reg;
+    color: #000000;
+}
+.event-place{
+    font-size: 14px;
+    font-family: Lato_reg;
+    color: #000000;
+}
+.event-address{
+    font-size: 14px;
+    font-family: Lato_reg;
+    color: #8e9498;
+}
+.event-filter input{
+    max-height: 40px;
+    margin: 19px;
+}
+#event-name{
+
 }

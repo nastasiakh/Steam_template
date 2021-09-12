@@ -1,119 +1,452 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns="http://www.w3.org/1999/html"><head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-     <header class="container-fluid">
-         <div class="container column">
-             <div class="row wrapper align-items-center">
-                 <p class="white logo col-2"><a>STE<span class="point pink"></span> AM</a></p>
-                 <nav class="col-6">
-                     <ul class="row justify-content-end" >
-                         <li class="nav-item"><a class="nav-link white" href="#">Home</a></li>
-                         <li class="nav-item"><a class="nav-link white" href="#">Get Started</a></li>
-                         <li class="nav-item"><a class="nav-link white" href="#">How it works</a></li>
-                         <li class="nav-item"><a class="nav-link white" href="#">Pricing</a></li>
-                         <li class="nav-item"><a class="nav-link white" href="#">Support</a></li>
-                     </ul>
-                 </nav>
-                 <div class="col-4">
-                     <a class="login white" href="#">Login/Signup</a>
-                     <a class="get-listed white" href="#">Get Listed Today</a>
-                 </div>
-             </div>
-             <p class="moto white">Find the <strong>next event</strong> you'll want <strong>to attend</strong>.</p>
-         </div>
+<header class="container-fluid">
+    <div class="container column">
+        <div class="row wrapper align-items-center">
+            <p class="white logo col-xl-2"><a class="white" href="#">STE<span class="point pink"></span> AM</a></p>
+            <nav class="col-xl-6 navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    Menu
+                </button>
+                <div class="collapse navbar-collapse" id="navbarHeader">
+                    <ul class="row justify-content-end">
+                        <li class="nav-item"><a class="nav-link white" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link white" href="#">Get Started</a></li>
+                        <li class="nav-item"><a class="nav-link white" href="#">How it works</a></li>
+                        <li class="nav-item"><a class="nav-link white" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link white" href="#">Support</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="login-listed col-xl-4">
+                <a class="login white" href="#">Login/Signup</a>
+                <a class="get-listed white" href="#">Get Listed Today</a>
+            </div>
+        </div>
+        <p class="moto white">Find the <strong>next event</strong> you'll want <strong>to attend</strong>.</p>
+    </div>
 
-     </header>
-     <main class="container-fluid">
-         <div class="banner">
-             <img class="img-fluid" src="images/map.png"/>
-         </div>
-         <div class="events-list row justify-content-around align-items-center">
-             <nav class="events-tabs ">
-                 <div class="nav nav-tabs container" id="nav-tab" role="tablist">
-                     <a class="nav-link active" id="nav-hot-events-tab" data-toggle="tab" href="#nav-hot-events"
-                        role="tab" aria-controls="nav-home" aria-selected="true">Hot Events</a>
-                     <a class="nav-link" id="nav-trending-events-tab" data-toggle="tab" href="#nav-trending-events"
-                        role="tab" aria-controls="nav-profile" aria-selected="false">Trending Events</a>
-                 </div>
-             </nav>
-             <form class="event-filter row ">
-                 <input type="text" class="" id="event-name" placeholder="Event name"/>
-                 <input type="text" class="" id="customer-location" placeholder="Your location"/>
-             </form>
-         </div>
+</header>
+<main class="container-fluid">
+    <div class="banner">
+        <img class="img-fluid" src="images/map.png">
+    </div>
+    <div class="events-list row justify-content-around align-items-center">
+        <div class="container">
+            <div class="row">
+                <nav class="events-tabs">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-link active" id="nav-hot-events-tab" data-toggle="tab" href="#nav-hot-events" role="tab" aria-controls="nav-home" aria-selected="true">Hot Events</a>
+                        <a class="nav-link" id="nav-trending-events-tab" data-toggle="tab" href="#nav-trending-events" role="tab" aria-controls="nav-profile" aria-selected="false">Trending Events</a>
+                    </div>
+                </nav>
+                <form class="event-filter row justify-content-start">
+                    <div class="col-xl-6">
+                        <input type="text" id="event-name" placeholder="Event name">
+                    </div>
+                    <div class="col-xl-5 location">
+                        <input type="text" id="customer-location" placeholder="Your location">
 
-         <div class="tab-content event-examples container" id="nav-tabContent">
-             <div aria-labelledby="nav-hot-events-tab" class="tab-pane fade show active"
-                  id="nav-hot-events" role="tabpanel">
-                 <div class="row justify-content-between">
-                     <div class="event col-xl-4">
-                         <img src="images/img.png" class="event-img-top" alt="poster">
-                         <div class="event-body">
-                             <h4 class="event-title"><a href="#">Act Big! Ultimate Music  Festival</a></h4>
-                             <p class="event-place"></p>
-                             <p class="event-address"></p>
-                             <p class="event-text">Some quick example text to build on the event title and make up the bulk of the event's content.</p>
-                             <span class="male"></span>
-                             <span class="female"></span>
-                         </div>
-                     </div>
-                     <div class="event col-xl-4">
-                         <img src="images/Layer%2011.png" class="event-img-top" alt="poster">
-                         <div class="event-body">
-                             <h4 class="event-title"><a href="#">event title</a></h4>
-                             <p class="event-place"></p>
-                             <p class="event-address"></p>
-                             <p class="event-text">Some quick example text to build on the event title and make up the bulk of the event's content.</p>
-                             <span class="male"></span>
-                             <span class="female"></span>
-                         </div>
-                     </div>
-                     <div class="event col-xl-4">
-                         <img src="images/Layer%2012.png" class="event-img-top" alt="poster">
-                         <div class="event-body">
-                             <h4 class="event-title"><a href="#">event title</a></h4>
-                             <p class="event-place"></p>
-                             <p class="event-address"></p>
-                             <p class="event-text">Some quick example text to build on the event title and make up the bulk of the event's content.</p>
-                             <span class="male"></span>
-                             <span class="female"></span>
-                         </div>
-                     </div>
-                     <div class="event col-xl-4">
-                         <img src="..." class="event-img-top" alt="...">
-                         <div class="event-body">
-                             <h5 class="event-title"><a href="#">event title</a></h5>
-                             <p class="event-place"></p>
-                             <p class="event-address"></p>
-                             <p class="event-text">Some quick example text to build on the event title and make up the bulk of the event's content.</p>
-                             <span class="male"></span>
-                             <span class="female"></span>
-                         </div>
-                     </div>
+                        <span class="col-xl-1 calendar"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-                 </div>
+    <div class="tab-content event-examples container" id="nav-tabContent">
+        <div aria-labelledby="nav-hot-events-tab" class="tab-pane fade show active" id="nav-hot-events" role="tabpanel">
+            <div class="row justify-content-between">
+                <div class="event col-xl-4">
+                    <div class="event-img">
+                        <img src="images/img.png" class="event-img-top" alt="poster">
+                        <span class="img-bottom-shadow"></span>
+                        <span class="img-fb"></span>
+                        <span class="img-heart"></span>
+                        <span class="event-img-label white">Aug 17, 2013  02:00pm - 08:00pm IST</span>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title"><a href="#">Act Big! Ultimate Music Festival</a></h4>
+                        <p class="event-place">Pattichion Municipal Amphitheater
+                            <br><span class="event-address lgrey">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</span>
+                        </p>
+                        <p class="event-text">An evening of bowling by geeks for geeks. Nothing more, nothing less
+                            (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #GeekBowling on
+                            Twitter for up to the minute news...</p>
+                    </div>
+                    <div class="gender-info row justify-content-between">
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">13%</p>
+                            <p class="gender-m lgrey">MALE</p>
+                        </div>
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">87%</p>
+                            <p class="gender-f lgrey">FEMALE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event col-xl-4">
+                    <div class="event-img">
+                        <img src="images/Layer%2011.png" class="event-img-top" alt="poster">
+                        <span class="img-bottom-shadow"></span>
+                        <span class="img-e"></span>
+                        <span class="img-heart"></span>
+                        <span class="event-img-label white">Aug 17, 2013  02:00pm - 08:00pm IST</span>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title"><a href="#">Summer Art Club - Week 1/3</a></h4>
+                        <p class="event-place">Fun Factory Wildeshausen
+                            <br><span class="event-address lgrey">Am Umspannwerk 7, Wildeshausen, 27793, Germany</span>
+                        </p>
+                        <p class="event-text">Join us for creative holiday activities - this week with Ashley &amp; Letty! Let your 8-13 year olds to join to help burn some of that pent-up creative energy on our fun artist led workshop. You can look all three days, or just one at a time...</p>
+                    </div>
+                    <div class="gender-info row justify-content-between">
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">25%</p>
+                            <p class="gender-m lgrey">MALE</p>
+                        </div>
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">75%</p>
+                            <p class="gender-f lgrey">FEMALE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event col-xl-4">
+                    <div class="event-img">
+                        <img src="images/Layer%2012.png" class="event-img-top" alt="poster">
+                        <span class="img-bottom-shadow"></span>
+                        <span class="img-fb"></span>
+                        <span class="img-heart"></span>
+                        <span class="event-img-label white">Aug 17, 2013  02:00pm - 08:00pm IST</span>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title"><a href="#">Act Big! Ultimate Music Festival</a></h4>
+                        <p class="event-place">Pattichion Municipal Amphitheater
+                            <br><span class="event-address lgrey">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</span>
+                        </p>
+                        <p class="event-text">An evening of bowling by geeks for geeks. Nothing more, nothing less
+                            (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #GeekBowling on
+                            Twitter for up to the minute news...</p>
+                    </div>
+                    <div class="gender-info row justify-content-between">
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">13%</p>
+                            <p class="gender-m lgrey">MALE</p>
+                        </div>
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">87%</p>
+                            <p class="gender-f lgrey">FEMALE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event col-xl-4">
+                    <div class="event-img">
+                        <img src="images/Layer%2013.png" class="event-img-top" alt="poster">
+                        <span class="img-bottom-shadow"></span>
+                        <span class="img-e"></span>
+                        <span class="img-heart"></span>
+                        <span class="event-img-label white">Aug 17, 2013  02:00pm - 08:00pm IST</span>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title"><a href="#">Act Big! Ultimate Music Festival</a></h4>
+                        <p class="event-place">Pattichion Municipal Amphitheater
+                            <br><span class="event-address lgrey">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</span>
+                        </p>
+                        <p class="event-text">An evening of bowling by geeks for geeks. Nothing more, nothing less
+                            (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #GeekBowling on
+                            Twitter for up to the minute news...</p>
+                    </div>
+                    <div class="gender-info row justify-content-between">
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">13%</p>
+                            <p class="gender-m lgrey">MALE</p>
+                        </div>
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">87%</p>
+                            <p class="gender-f lgrey">FEMALE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event col-xl-4">
+                    <div class="event-img">
+                        <img src="images/Layer%2017.png" class="event-img-top" alt="poster">
+                        <span class="img-bottom-shadow"></span>
+                        <span class="img-fb"></span>
+                        <span class="img-heart"></span>
+                        <span class="event-img-label white">Aug 17, 2013  02:00pm - 08:00pm IST</span>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title"><a href="#">Act Big! Ultimate Music Festival</a></h4>
+                        <p class="event-place">Pattichion Municipal Amphitheater
+                            <br><span class="event-address lgrey">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</span>
+                        </p>
+                        <p class="event-text">An evening of bowling by geeks for geeks. Nothing more, nothing less
+                            (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #GeekBowling on
+                            Twitter for up to the minute news...</p>
+                    </div>
+                    <div class="gender-info row justify-content-between">
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">13%</p>
+                            <p class="gender-m lgrey">MALE</p>
+                        </div>
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">87%</p>
+                            <p class="gender-f lgrey">FEMALE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event col-xl-4">
+                    <div class="event-img">
+                        <img src="images/event6.png" class="event-img-top" alt="poster">
+                        <span class="img-bottom-shadow"></span>
+                        <span class="img-e"></span>
+                        <span class="img-heart"></span>
+                        <span class="event-img-label white">Aug 17, 2013  02:00pm - 08:00pm IST</span>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title"><a href="#">Act Big! Ultimate Music Festival</a></h4>
+                        <p class="event-place">Pattichion Municipal Amphitheater
+                            <br><span class="event-address lgrey">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</span>
+                        </p>
+                        <p class="event-text">An evening of bowling by geeks for geeks. Nothing more, nothing less
+                            (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #GeekBowling on
+                            Twitter for up to the minute news...</p>
+                    </div>
+                    <div class="gender-info row justify-content-between">
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">13%</p>
+                            <p class="gender-m lgrey">MALE</p>
+                        </div>
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">87%</p>
+                            <p class="gender-f lgrey">FEMALE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="more-events-btn">Load More</button>
 
-             </div>
+        </div>
 
-             <div aria-labelledby="nav-trending-events-tab" class="tab-pane fade" id="nav-trending-events"
-                  role="tabpanel">
+        <div aria-labelledby="nav-trending-events-tab" class="tab-pane fade" id="nav-trending-events" role="tabpanel">
+            <div class="row justify-content-between">
+                <div class="event col-xl-4">
+                    <div class="event-img">
+                        <img src="images/img.png" class="event-img-top" alt="poster">
+                        <span class="img-bottom-shadow"></span>
+                        <span class="img-fb"></span>
+                        <span class="img-heart"></span>
+                        <span class="event-img-label white">Aug 17, 2013  02:00pm - 08:00pm IST</span>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title"><a href="#">Act Big! Ultimate Music Festival</a></h4>
+                        <p class="event-place">Pattichion Municipal Amphitheater
+                            <br><span class="event-address lgrey">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</span>
+                        </p>
+                        <p class="event-text">An evening of bowling by geeks for geeks. Nothing more, nothing less
+                            (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #GeekBowling on
+                            Twitter for up to the minute news...</p>
+                    </div>
+                    <div class="gender-info row justify-content-between">
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">13%</p>
+                            <p class="gender-m lgrey">MALE</p>
+                        </div>
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">87%</p>
+                            <p class="gender-f lgrey">FEMALE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event col-xl-4">
+                    <div class="event-img">
+                        <img src="images/Layer%2011.png" class="event-img-top" alt="poster">
+                        <span class="img-bottom-shadow"></span>
+                        <span class="img-e"></span>
+                        <span class="img-heart"></span>
+                        <span class="event-img-label white">Aug 17, 2013  02:00pm - 08:00pm IST</span>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title"><a href="#">Summer Art Club - Week 1/3</a></h4>
+                        <p class="event-place">Fun Factory Wildeshausen
+                            <br><span class="event-address lgrey">Am Umspannwerk 7, Wildeshausen, 27793, Germany</span>
+                        </p>
+                        <p class="event-text">Join us for creative holiday activities - this week with Ashley &amp; Letty! Let your 8-13 year olds to join to help burn some of that pent-up creative energy on our fun artist led workshop. You can look all three days, or just one at a time...</p>
+                    </div>
+                    <div class="gender-info row justify-content-between">
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">25%</p>
+                            <p class="gender-m lgrey">MALE</p>
+                        </div>
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">75%</p>
+                            <p class="gender-f lgrey">FEMALE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event col-xl-4">
+                    <div class="event-img">
+                        <img src="images/Layer%2012.png" class="event-img-top" alt="poster">
+                        <span class="img-bottom-shadow"></span>
+                        <span class="img-fb"></span>
+                        <span class="img-heart"></span>
+                        <span class="event-img-label white">Aug 17, 2013  02:00pm - 08:00pm IST</span>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title"><a href="#">Act Big! Ultimate Music Festival</a></h4>
+                        <p class="event-place">Pattichion Municipal Amphitheater
+                            <br><span class="event-address lgrey">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</span>
+                        </p>
+                        <p class="event-text">An evening of bowling by geeks for geeks. Nothing more, nothing less
+                            (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #GeekBowling on
+                            Twitter for up to the minute news...</p>
+                    </div>
+                    <div class="gender-info row justify-content-between">
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">13%</p>
+                            <p class="gender-m lgrey">MALE</p>
+                        </div>
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">87%</p>
+                            <p class="gender-f lgrey">FEMALE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event col-xl-4">
+                    <div class="event-img">
+                        <img src="images/Layer%2013.png" class="event-img-top" alt="poster">
+                        <span class="img-bottom-shadow"></span>
+                        <span class="img-e"></span>
+                        <span class="img-heart"></span>
+                        <span class="event-img-label white">Aug 17, 2013  02:00pm - 08:00pm IST</span>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title"><a href="#">Act Big! Ultimate Music Festival</a></h4>
+                        <p class="event-place">Pattichion Municipal Amphitheater
+                            <br><span class="event-address lgrey">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</span>
+                        </p>
+                        <p class="event-text">An evening of bowling by geeks for geeks. Nothing more, nothing less
+                            (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #GeekBowling on
+                            Twitter for up to the minute news...</p>
+                    </div>
+                    <div class="gender-info row justify-content-between">
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">13%</p>
+                            <p class="gender-m lgrey">MALE</p>
+                        </div>
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">87%</p>
+                            <p class="gender-f lgrey">FEMALE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event col-xl-4">
+                    <div class="event-img">
+                        <img src="images/Layer%2017.png" class="event-img-top" alt="poster">
+                        <span class="img-bottom-shadow"></span>
+                        <span class="img-fb"></span>
+                        <span class="img-heart"></span>
+                        <span class="event-img-label white">Aug 17, 2013  02:00pm - 08:00pm IST</span>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title"><a href="#">Act Big! Ultimate Music Festival</a></h4>
+                        <p class="event-place">Pattichion Municipal Amphitheater
+                            <br><span class="event-address lgrey">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</span>
+                        </p>
+                        <p class="event-text">An evening of bowling by geeks for geeks. Nothing more, nothing less
+                            (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #GeekBowling on
+                            Twitter for up to the minute news...</p>
+                    </div>
+                    <div class="gender-info row justify-content-between">
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">13%</p>
+                            <p class="gender-m lgrey">MALE</p>
+                        </div>
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">87%</p>
+                            <p class="gender-f lgrey">FEMALE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event col-xl-4">
+                    <div class="event-img">
+                        <img src="images/event6.png" class="event-img-top" alt="poster">
+                        <span class="img-bottom-shadow"></span>
+                        <span class="img-e"></span>
+                        <span class="img-heart"></span>
+                        <span class="event-img-label white">Aug 17, 2013  02:00pm - 08:00pm IST</span>
+                    </div>
+                    <div class="event-body">
+                        <h4 class="event-title"><a href="#">Act Big! Ultimate Music Festival</a></h4>
+                        <p class="event-place">Pattichion Municipal Amphitheater
+                            <br><span class="event-address lgrey">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</span>
+                        </p>
+                        <p class="event-text">An evening of bowling by geeks for geeks. Nothing more, nothing less
+                            (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #GeekBowling on
+                            Twitter for up to the minute news...</p>
+                    </div>
+                    <div class="gender-info row justify-content-between">
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">13%</p>
+                            <p class="gender-m lgrey">MALE</p>
+                        </div>
+                        <div class="gender-box col column">
+                            <p class="gender-figures dgrey">87%</p>
+                            <p class="gender-f lgrey">FEMALE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="more-events-btn">Load More</button>
+        </div>
 
-             </div>
-         </div>
+    </div>
+
+</main>
+
+<footer class="container-fluid">
+    <div class="container column">
+        <ul class="footer-nav row justify-content-center">
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Home</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">About eco</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">How it works</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Industries</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Features</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Pricing</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Faq's</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Privacy policy</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Blog</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Terms of service</a></li>
+        </ul>
+
+        <span class="footer-divider"></span>
+        <div class="copyright-soc-media row justify-content-between">
+            <p class="lgrey"><a class="copyright lgrey" href="#">© 2013 <span class="white">steam</span>. All Rights Reserved. Design by <span class="white">woof</span>.</a></p>
+
+            <ul class="soc-media row">
+                <li class="soc-media-item"><a class="soc-media-link fb" href="#"></a></li>
+                <li class="soc-media-item"><a class="soc-media-link tw" href="#"></a></li>
+                <li class="soc-media-item"><a class="soc-media-link in" href="#"></a></li>
+                <li class="soc-media-item"><a class="soc-media-link yt" href="#"></a></li>
+                <li class="soc-media-item"><a class="soc-media-link oo" href="#"></a></li>
+                <li class="soc-media-item"><a class="soc-media-link wf" href="#"></a></li>
+            </ul>
+        </div>
 
 
 
-     </main>
-     <footer></footer>
+    </div>
+</footer>
 
-</body>
-</html>
+
+</body></html>

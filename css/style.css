@@ -9,34 +9,27 @@
     src: url('../fonts/Alternate Gothic No2 BT.ttf');
 }
 
-.wrapper{
-    margin: 0 auto;
-    overflow: hidden;
-}
 header {
-    padding: 20px 0;
+    padding: 9px 0;
     background-color: #333333;
 }
-
 .white {
     color: #fcfcfc;
 }
-
 .lgrey {
     color: #8e9498
 }
-
 .dgrey {
     color: #36393b
 }
-
 .pink {
     color: #fe2232
 }
-
 a:hover {
     text-decoration: none;
 }
+
+
 /*HEADER*/
 ul {
     margin-left: 0;
@@ -47,7 +40,9 @@ li {
     font-family: Lato_reg, sans-serif;
     list-style-type: none;
 }
-
+a.white:hover{
+    color: #fcfcfc;
+}
 a.nav-link {
     font-size: 16px;
 }
@@ -56,6 +51,7 @@ a.nav-link {
     font-family: Alt_Gothic;
     font-size: 55px;
     position: relative;
+    padding: 0;
 }
 .logo:before {
     content: "";
@@ -64,15 +60,26 @@ a.nav-link {
     width: 7px;
     height: 7px;
     background-color: #fe2232;
-    top: 52px;
-    left: 77px;
+    bottom: 23px;
+    left: 61px;
+}
+
+a.nav-link {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+    margin: 0 5px;
 }
 .navbar button{
     font-size: 32px;
     color: white;
     font-weight: 600;
 }
+.login {
+}
+.get-listed {
 
+}
 .moto {
     font-family: sans-serif;
     font-size: 38px;
@@ -81,31 +88,8 @@ a.nav-link {
 .login-listed{
     text-align: center;
 }
-.login {
-    display: inline-block;
-    padding: 14px 21px 11px;
-    margin-right: 9px;
-    border: 1px solid;
-    border-radius: 6%;
-    box-sizing: border-box;
-    top: -10px;
-    position: relative;
-    margin-bottom: 20px;
-}
 
-.get-listed {
-    display: inline-block;
-    padding: 14px 21px 11px;
-    border: 1px solid;
-    border-radius: 6%;
-    box-sizing: border-box;
-    top: -10px;
-    position: relative;
-}
 
-.row.wrapper.align-items-center {
-    margin-bottom: 60px;
-}
 
 /*MAIN*/
 main.container-fluid {

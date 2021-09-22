@@ -329,7 +329,6 @@ main.container-fluid {
 
 .events-tabs {
     width: 100%;
-    margin-left: 20px;
 }
 
 .event-filter {
@@ -338,19 +337,28 @@ main.container-fluid {
 }
 
 .event-filter > div {
-    padding: 0 5px;
+    margin: 9px 9px 0px 0px;
 }
 
-.event-filter input {
+.event-filter div input {
     font-size: 16px;
-    max-height: 40px;
-    font-weight: 600;
-    margin: 17px 1px;
     width: 100%;
-    padding: 20px 10px;
+    padding: 6px 10px;
     font-family: sans-serif;
-
+    box-sizing: border-box;
+    border: 1px solid #8e9498;
 }
+.event-name-inpt[placeholder]{
+    color: #8e9498;
+}
+input#event-name:focus-visible,
+input#customer-location:focus-visible. {
+    outline: none;
+}
+.event-name-inpt{
+    padding-right: 20px;
+    padding-left: 0;
+ }
 
 #customer-location {
     font-weight: 300;
@@ -366,7 +374,7 @@ main.container-fluid {
     display: block;
     position: absolute;
     right: 48px;
-    top: 19px;
+    top: 6px;
 }
 
 .location:after {
@@ -377,11 +385,13 @@ main.container-fluid {
 }
 
 .location:before {
-    width: 20px;
-    height: 20px;
-    background: url('../images/css_sprites.png') -242px -128px;
-    right: 17px;
-    top: 28px;
+    content: "";
+    min-width: 32px;
+    height: 27px;
+    position: absolute;
+    background: url(../images/css_sprites.png) -57px -197px;
+    top: 8px;
+    right: 20px;
 }
 
 .calendar {

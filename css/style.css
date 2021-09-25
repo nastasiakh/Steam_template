@@ -43,9 +43,6 @@ li {
 a.white:hover{
     color: #fcfcfc;
 }
-a.nav-link {
-    font-size: 16px;
-}
 
 .logo {
     font-family: Alt_Gothic;
@@ -70,12 +67,17 @@ a.nav-link {
     padding: 5px;
     margin: 0 5px;
 }
+li.nav-item:hover a.nav-link {
+    color: #fe2232;
+}
+
 .navbar button{
     font-size: 32px;
     color: white;
     font-weight: 600;
 }
 .login {
+
 }
 .get-listed {
 
@@ -390,7 +392,7 @@ input#customer-location:focus-visible. {
     min-width: 32px;
     height: 27px;
     position: absolute;
-    background: url(../images/css_sprites.png) -57px -197px;
+    background: url("../images/css_sprites.png") -57px -197px;
     top: 8px;
     right: 20px;
 }
@@ -457,12 +459,13 @@ footer {
 
 p>a.copyright{
     text-align: center;
-}
-a.copyright {
     font-family: Lato_reg, sans-serif;
     font-size: 14px;
 }
-
+.copyright-soc-media p.lgrey:hover a.copyright{
+    color: #cccccc;
+    font-weight: bold;
+}
 a.copyright span {
     font-weight: 600;
 }

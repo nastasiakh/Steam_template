@@ -47,23 +47,23 @@
         <div class="banner">
             <img class="img-fluid" src="images/map.png" alt="map" />
         </div>
-        <div class="events-list row justify-content-around align-items-center">
+        <div class="events-list">
             <div class="container">
                 <div class="row">
-                    <nav class="events-tabs col-md-6 col-xl-4">
+                    <nav class="events-tabs col-md-6 col-xl-3">
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <a class="nav-link active" id="nav-hot-events-tab" data-toggle="tab" href="#nav-hot-events" role="tab" aria-controls="nav-hot-events" aria-selected="true">Hot Events</a>
                             <a class="nav-link" id="nav-trending-events-tab" data-toggle="tab" href="#nav-trending-events" role="tab" aria-controls="nav-trending-events" aria-selected="false">Trending Events</a>
                         </div>
                     </nav>
-                    <form class="event-filter row justify-content-start col-xl-7">
-                        <div class="col-xl-6">
-                            <input type="text" id="event-name" placeholder="Event name">
+                    <form class="event-filter row col-xl-9" action="#" method="post">
+                        <div class="col-xl-7 event-name-inpt">
+                            <input type="text" id="event-name" placeholder="Event name" />
                         </div>
-                        <div class="col-xl-5 location">
-                            <input type="text" id="customer-location" placeholder="Your location">
+                        <div class="col-xl-4 location-inpt">
+                            <input type="text" id="customer-location" placeholder="Your location" />
 
-                            <span class="col-xl-1 calendar"></span>
+                            <a class="col-xl-1 calendar"></a>
                         </div>
                     </form>
                 </div>

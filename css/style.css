@@ -350,7 +350,9 @@ h4.event-title {
     left: 50%;
     transform: translate(-50%, 0);
 }
-
+.more-events-btn:hover{
+    cursor:pointer;
+}
 .events-tabs {
     width: 100%;
 }

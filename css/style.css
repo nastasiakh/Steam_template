@@ -465,6 +465,9 @@ footer {
 .footer-nav-item .footer-nav-link {
     color: #8e9498;
 }
+.footer-nav-item .footer-nav-link:hover {
+    color: #f4f4f4;
+}
 
 .footer-divider {
     display: block;
@@ -485,7 +488,6 @@ p>a.copyright{
 }
 .copyright-soc-media p.lgrey:hover a.copyright{
     color: #cccccc;
-    font-weight: bold;
 }
 a.copyright span {
     font-weight: 600;

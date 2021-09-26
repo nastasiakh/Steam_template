@@ -10,7 +10,7 @@
 }
 
 header {
-    padding: 9px 0;
+    padding: 9px 0 18px;
     background-color: #333333;
 }
 .white {
@@ -77,18 +77,39 @@ li.nav-item a.nav-link:hover {
     font-weight: 600;
 }
 .login {
-
+    display: inline-flex;
+    box-sizing: border-box;
+    border: 1px solid #fe2232;
+    background-color: #fe2232;
+    padding: 7px 22px;
+    margin-left: 3px;
+    margin-right: 10px;
+    border-radius: 5%;
 }
 .get-listed {
+    display: inline-flex;
+    box-sizing: border-box;
+    border: 1px solid #fe2232;
+    padding: 7px 22px 7px 18px;
+    background-color: #fe2232;
+    border-radius: 5%;
+}
 
+.login:hover,
+.get-listed:hover{
+    border:1px solid #5b5b5b;
+    background: #852d3300
 }
 .moto {
     font-family: sans-serif;
     font-size: 38px;
     text-align: center;
 }
+.nav-login-listed{
+    padding: 16px 0 0 0;
+}
 .login-listed{
-    text-align: center;
+    margin-left: 4px;
 }
 
 
@@ -101,7 +122,7 @@ main.container-fluid {
     overflow: hidden;
 }
 .banner{
-    display: none;
+    display: block;
 }
 .events-list {
     background-color: #fcfcfc;
@@ -1092,6 +1113,7 @@ a.copyright span {
         font-size: 38px;
         text-align: center;
     }
+
     .login-listed{
         text-align: center;
     }

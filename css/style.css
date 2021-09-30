@@ -117,7 +117,7 @@ main.container-fluid {
     overflow: hidden;
 }
 .banner {
-    display: block;
+    width: 100%;
 }
 .events-list {
     background-color: #fcfcfc;
@@ -335,7 +335,7 @@ h4.event-title {
     color: #8e9498;
     font-family: Lato_reg, sans-serif;
     font-size: 16px;
-    padding: 15px 70px;
+    padding: 4px 58px;
     box-shadow: 0 0 2px #aba8a8c7;
     background-color: #fcfcfc;
     border: 1px solid #aba8a8c7;
@@ -626,7 +626,7 @@ a.copyright span {
         right: 7px;
     }
     .banner{
-        display: none;
+        width: 100%;
     }
     form.event-filter.row.col-xl-9.justify-content-start{
         margin: 16px 0;
@@ -694,7 +694,7 @@ a.copyright span {
     .login.white{
         margin-bottom: 10px;
     }
-    .banner.text-center{
+    .banner{
         display: none;
     }
     .event-filter{

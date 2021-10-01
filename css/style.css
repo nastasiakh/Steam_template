@@ -80,16 +80,16 @@ li.nav-item a.nav-link:hover {
     box-sizing: border-box;
     border: 1px solid #fe2232;
     background-color: #fe2232;
-    padding: 7px 22px;
-    margin-left: 3px;
-    margin-right: 10px;
+    padding: 7px 12px;
+    margin-left: 0;
+    margin-right: 0;
     border-radius: 5%;
 }
 .get-listed {
     display: inline-flex;
     box-sizing: border-box;
     border: 1px solid #fe2232;
-    padding: 7px 22px 7px 18px;
+    padding: 7px 13px 7px 12px;
     background-color: #fe2232;
     border-radius: 5%;
 }
@@ -144,16 +144,18 @@ main.container-fluid {
 }
 
 .event-examples {
-    padding: 40px 15px;
+    padding: 40px 0;
 }
-
-.event.col-xl-4 {
+.events{
+    justify-content: center;
+}
+.event.col-10.col-xl-4 {
+    position: relative;
     margin: 0 0 40px 0;
     padding: 0;
     box-shadow: 0 0 2px #aba8a8c7;
     background-color: #fcfcfc;
     min-height: 538px;
-    max-width: 30.7%;
 }
 
 .event:first-child {
@@ -183,6 +185,9 @@ main.container-fluid {
 .event-img {
     display: block;
     position: relative;
+    background: url("../images/img.png") no-repeat;
+    background-size: cover;
+    min-height: 176px;
     width: 100%;
 }
 
@@ -200,7 +205,7 @@ main.container-fluid {
     height: 32px;
     background: url('../images/css_sprites.png') -89px -129px;
     left: 10px;
-    top: 173px;
+    bottom: 10px;
     z-index: 999;
 }
 
@@ -213,6 +218,7 @@ main.container-fluid {
     height: 30px;
     background: url('../images/css_sprites.png') -190px -126px;
     left: 305px;
+    bottom: 10px;
 }
 
 .img-bottom-shadow {
@@ -220,12 +226,11 @@ main.container-fluid {
     display: block;
     content: "";
     width: 100%;
-    height: 99px;
-    background: repeat-x url('../images/css_sprites.png') -15px -31px;
+    height: 100px;
+    background: no-repeat url('../images/css_sprites.png') -15px -9px;
     bottom: 0;
-    background-size: 141%;
+    background-size: 110%;
 }
-
 .event-img-label {
     font-family: Lato_reg, sans-serif;
     font-size: 14px;
@@ -580,8 +585,8 @@ a.copyright span {
 @media (min-width: 768px) and (max-width:  991.98px) {
     nav.navbar.navbar-expand-lg.col-12 {
         min-height: 177px;
-        top: -54px;
-        left: -30px;
+        top: -83px;
+        left: -111px;
     }
     div#navbarHeader{
         min-width: 413px;
@@ -606,7 +611,8 @@ a.copyright span {
         border: none;
     }
     .login-listed{
-        top: -68px;
+        justify-content: space-between;
+        top: -42px;
         right: 7px;
     }
     .banner{
@@ -702,11 +708,11 @@ a.copyright span {
         max-width: 100%;
     }
     .img-fb, .img-e{
-        top: 283px;
+       bottom: 10px;
     }
     .img-heart {
-        left: 501px;
-        top: 283px;
+        bottom: 10px;
+        left: 433px;
     }
     p.lgrey.order-2.order-xl-1{
         margin: 48px auto 0;
@@ -772,13 +778,8 @@ a.copyright span {
     .event.col-xl-4{
         max-width: 100%;
     }
-    .img-fb, .img-e{
-        left: 5px;
-        top: 153px;
-    }
-    .img-heart {
-        left: 283px;
-        top: 152px;
+    .img-fb, .img-e,.img-heart{
+        display: none;
     }
     p.lgrey.order-2.order-xl-1{
         margin: 44px 0 10px;

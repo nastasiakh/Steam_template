@@ -161,6 +161,7 @@ main.container-fluid {
 .event-content{
     box-shadow: 0 0 2px #aba8a8c7;
     background-color: #fcfcfc;
+    position: relative;
 }
 .event:first-child {
     margin-left: 0;
@@ -227,7 +228,6 @@ main.container-fluid {
     height: 100px;
     background: no-repeat url('../images/css_sprites.png') -15px -9px;
     bottom: 0;
-    background-size: 110%;
 }
 .event-img-label {
     font-family: Lato_reg, sans-serif;
@@ -340,7 +340,7 @@ h4.event-title {
 }
 
 .events-tabs {
-    width: 100%;
+    justify-content: center;
 }
 
 .event-filter {
@@ -357,7 +357,7 @@ h4.event-title {
     font-size: 16px;
     color: #272727;
     padding: 6px 10px;
-    width: 106%;
+    width: 100%;
     box-sizing: border-box;
     border: 1px solid #8e9498;
 }
@@ -368,7 +368,7 @@ h4.event-title {
     font-family: sans-serif;
     font-size: 16px;
     padding: 6px 40px 6px 10px;
-    width: 131%;
+    width: 100%;
     box-sizing: border-box;
     border: 1px solid #8e9498;
 }
@@ -389,7 +389,7 @@ input#customer-location:focus-visible {
     height: 28px;
     background: #8e9498;
     top: 5px;
-    right: -16px;
+    right: 53px;
     z-index: 100;
     position: absolute;
 }
@@ -403,7 +403,7 @@ input#customer-location:focus-visible {
     background: url(../images/css_sprites.png) -241px -130px;
     z-index: 100;
     top: 9px;
-    right: -48px;
+    right: 24px;
 }
 
 .calendar {
@@ -543,13 +543,19 @@ a.copyright span {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .login.white {
+    .login {
         margin-bottom: 10px;
+        font-size: 14px;
     }
     p.white.logo a.white:before{
-        bottom: 23px;
+        bottom: 13px;
     }
-
+    .login-listed {
+        justify-content: space-around;
+    }
+    a.nav-link {
+        margin: 0 4px;
+    }
     form.event-filter{
         margin: 16px 0;
         padding: 0;
@@ -565,14 +571,12 @@ a.copyright span {
     .calendar{
         right: -97px;
     }
-    .event {
-        max-width: 45%;
-    }
+
     .img-e, .img-fb, .img-heart{
-        top: 222px;
+        top: 137px;
     }
     .img-heart{
-        left: 389px;
+        left: 282px;
     }
     ul.soc-media{
         right: 60px;
@@ -620,59 +624,73 @@ a.copyright span {
     .banner{
         width: 100%;
     }
-    form.event-filter{
-        margin: 16px 0;
+    .event-filter {
         padding: 0;
+        width: 100%;
+        margin: 20px 0;
     }
-    #event-name{
-        width: 70%;
-        margin: 0 0 10px;
+    .event-filter > div {
+        margin-right: 0;
     }
-    .event-name-inpt{
-        width: 35%;
-    }
-    #customer-location{
-        width: 50%;
-    }
-    .location-inpt:before{
-        right: 0;
-        left: 289px;
-    }
+    .location-inpt:before,
     .location-inpt:after{
-        right: 0;
-        left: 300px;
+        display: none;
     }
     .calendar{
-        right: 277px;
+        right: 23px;
     }
-    .event{
-        max-width: 45%;
+    .events {
+        justify-content: space-evenly;
     }
-    .img-e, .img-fb{
-        left: 5px;
-        top: 155px;
-    }
-    .img-heart{
-        left: 287px;
-        top: 155px;
+    .img-bottom-shadow{
+        height: 87px;
     }
     ul.soc-media{
         margin-right: 13px;
+        margin-left: 10px;
     }
+    .img-fb, .img-heart, .img-e{
+        display: none;
+    }
+    .gender-box .gender-figures{
+        font-size: 16px;
+    }
+    .gender-box .gender-f, .gender-box .gender-m{
+        font-size: 12px;
+    }
+    .gender-box .gender-f:before, .gender-box .gender-m:before{
+        display: none;
+    }
+}
 
-}
-.img-fb, .img-heart, .img-e{
-    top:136px;
-}
 @media (min-width: 576px) and (max-width: 767.98px) {
+    .logo{
+        font-size: 50px;
+    }
+    .logo-link:before{
+        left: 55px;
+        bottom: 11px;
+    }
+    .login-listed {
+        right: -100px;
+        top: -45px;
+        justify-content: space-between;
+    }
+    .login,
+    .get-listed{
+        font-size: 14px;
+    }
     nav.navbar.navbar-expand-lg{
         min-height: 177px;
-        top: 15px;
-        left: -202px;
+        top: -87px;
+        position: relative;
     }
     div#navbarHeader{
         min-width: 413px;
         margin-top: 23px;
+        position: absolute;
+        top: 124px;
+        left: -109px;
     }
     button.navbar-toggler:focus,
     button.navbar-toggler:active {
@@ -681,9 +699,6 @@ a.copyright span {
     }
     .logo-link:before{
         bottom: 12px;
-    }
-    .login-listed{
-        right:-100px;
     }
     .login.white{
         margin-bottom: 10px;
@@ -706,24 +721,50 @@ a.copyright span {
         display: none;
     }
     .calendar{
-        right: 17px;
+        right: 42px;
     }
-    .event{
-        max-width: 100%;
+    .event {
+        min-height: 486px;
     }
-    .img-fb, .img-e{
-       bottom: 10px;
+    .event:nth-child(odd) {
+        padding-right: 24px;
+        padding-left: 0;
     }
-    .img-heart {
-        bottom: 10px;
-        left: 433px;
+    .img-bottom-shadow {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 96px;
+        background: no-repeat url('../images/css_sprites.png') -15px -9px;
+        bottom: 0;
+    }
+    .img-fb, .img-e, .img-heart {
+       display: none;
+    }
+    .gender-box .gender-figures{
+        font-size: 16px;
+    }
+    .gender-box .gender-f, .gender-box .gender-m{
+        font-size: 12px;
+    }
+    .gender-box .gender-f:before, .gender-box .gender-m:before{
+        display: none;
     }
     p.lgrey{
         margin: 48px auto 0;
     }
+    .copyright-soc-media {
+        margin-top: 23px;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-@media (max-width: 575.98px) {
+@media (min-width: 321px) and (max-width: 575.98px) {
+    .header-box {
+        max-height: 217px;
+    }
     nav.navbar.navbar-expand-lg{
         top: -59px;
         right: -15px;
@@ -745,15 +786,20 @@ a.copyright span {
         top: 8px;
         right: 20px;
     }
-    .login-listed{
+    .login-listed {
         margin-left: 0;
+        justify-content: space-evenly;
+        top: -69px;
+        left: 16px;
+    }
+    .events-tabs {
         justify-content: center;
     }
     .events{
         justify-content: center;
     }
-    .login, .get-listed{
-        padding: 7px 7px;
+    .login, .get-listed {
+        padding: 11px 18px;
         font-size: 14px;
     }
     .moto{
@@ -761,9 +807,6 @@ a.copyright span {
     }
     .banner{
         display: none;
-    }
-    .events-tabs{
-        justify-content: end;
     }
     .event-filter{
         margin: 20px 0;
@@ -780,7 +823,7 @@ a.copyright span {
         display: none;
     }
     .calendar{
-        right: 17px;
+        right: 45px;
     }
     .event{
         max-width: 100%;
@@ -788,11 +831,11 @@ a.copyright span {
     .img-fb, .img-e,.img-heart{
         display: none;
     }
-    p.lgrey.order-2.order-xl-1{
+    p.lgrey{
         margin: 44px 0 10px;
         text-align: center;
     }
-    ul.soc-media.order-1.order-xl-2.row {
+    ul.soc-media{
         margin-bottom: 34px;
         left: 46%;
         position: absolute;
@@ -804,5 +847,98 @@ a.copyright span {
     }
 }
 
+@media (max-width: 320px){
+    .header-box {
+        max-height: 217px;
+    }
+    nav.navbar.navbar-expand-lg{
+        top: -59px;
+        right: -15px;
+        min-height: 100px;
+    }
+    button.navbar-toggler{
+        position: absolute;
+        top: -33px;
+        right: 0;
+    }
+    button.navbar-toggler:focus,
+    button.navbar-toggler:active {
+        outline: none;
+        border: none;
+    }
+    .collapse.show {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 20px;
+    }
+    .login-listed {
+        margin-left: 0;
+        justify-content: space-evenly;
+        top: -69px;
+        left: 16px;
+    }
+    .events-tabs {
+        justify-content: center;
+    }
+    .events{
+        justify-content: center;
+    }
+    .login, .get-listed {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+    .event-filter{
+        margin: 20px 0;
+    }
+    #event-name,
+    #customer-location{
+        margin-bottom: 10px;
+    }
+    #customer-location{
+        width: 80%;
+    }
+    .location-inpt:before,
+    .location-inpt:after{
+        display: none;
+    }
+    .calendar {
+        right: 20px;
+    }
+    .img-bottom-shadow {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 100px;
+        background: no-repeat url("../images/css_sprites.png") -15px -9px;
+        bottom: 0;
+    }
+    .gender-info,
+    .moto,
+    .banner,
+    .img-fb, .img-heart, .img-e{
+        display: none;
+    }
+
+    .event:first-child {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .event {
+        position: relative;
+        margin: 0 0 40px 0;
+        padding: 0 10px;
+        min-height: 486px;
+    }
+    .copyright-soc-media {
+        margin-top: 23px;
+        flex-direction: column;
+        align-items: center;
+    }
+    ul.soc-media {
+        margin-bottom: 40px;
+    }
+}
 
 

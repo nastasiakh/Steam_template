@@ -42,6 +42,9 @@ li {
 a.white:hover {
     color: #fcfcfc;
 }
+.header-box{
+    justify-content: space-between;
+}
 .logo {
     font-family: Alt_Gothic;
     font-size: 55px;
@@ -147,7 +150,7 @@ main.container-fluid {
     padding: 40px 0;
 }
 .events{
-    justify-content: center;
+    justify-content: space-around;
 }
 .event.col-10.col-xl-4 {
     position: relative;
@@ -659,7 +662,9 @@ a.copyright span {
     }
 
 }
-
+.img-fb, .img-heart, .img-e{
+    top:136px;
+}
 @media (min-width: 576px) and (max-width: 767.98px) {
     nav.navbar.navbar-expand-lg.col-12 {
         min-height: 177px;
@@ -743,6 +748,9 @@ a.copyright span {
     }
     .login-listed{
         margin-left: 0;
+        justify-content: center;
+    }
+    .events{
         justify-content: center;
     }
     .login, .get-listed{

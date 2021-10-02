@@ -163,28 +163,18 @@ main.container-fluid {
     background-color: #fcfcfc;
     position: relative;
 }
-.event:first-child {
-    margin-left: 0;
-    padding-left: 0;
-}
-.event:nth-child(3n+3) {
-    margin-right: 0;
-    padding-right: 0;
-}
 .event-body {
     padding: 20px 15px 0 10px;
     max-width: 100%;
     min-height: 310px;
     overflow: hidden;
 }
-
 .gender-info {
     width: 100%;
     position: absolute;
     left: 15px;
     bottom: 0;
 }
-
 .event-img {
     display: block;
     position: relative;
@@ -193,7 +183,6 @@ main.container-fluid {
     min-height: 176px;
     width: 100%;
 }
-
 .img-fb,
 .img-heart,
 .img-e {
@@ -207,11 +196,9 @@ main.container-fluid {
     bottom: 10px;
     z-index: 999;
 }
-
 .img-e {
     background: url('../images/css_sprites.png') -140px -129px;
 }
-
 .img-heart {
     width: 31px;
     height: 30px;
@@ -219,7 +206,6 @@ main.container-fluid {
     left: 335px;
     bottom: 10px;
 }
-
 .img-bottom-shadow {
     position: absolute;
     display: block;
@@ -238,50 +224,41 @@ main.container-fluid {
     left: 50%;
     transform: translate(-50%, 0);
 }
-
 h4.event-title {
     margin: 0;
 }
-
 .event-title a {
     color: #000000;
     font-family: Lato_bold, sans-serif;
     font-size: 24px;
     font-weight: 600;
 }
-
 .event-text {
     font-size: 13px;
     font-family: Lato_reg, sans-serif;
     color: #000000;
     overflow: hidden;
 }
-
 .event-place {
     font-size: 14px;
     font-family: Lato_reg, sans-serif;
     color: #000000;
 }
-
 .event-address {
     font-size: 12px;
     font-family: Lato_reg, sans-serif;
     color: #8e9498;
 }
-
 .gender-box {
     background-color: #f4f4f4;
     padding: 10px 30px;
 }
-
 .gender-box:first-child {
     margin-right: 2px;
 }
-
 .gender-box:last-child {
     margin-left: 2px;
 }
-
 .gender-box .gender-figures {
     font-weight: 600;
     font-size: 29px;
@@ -289,7 +266,6 @@ h4.event-title {
     text-align: center;
     margin: 0;
 }
-
 .gender-box .gender-f,
 .gender-box .gender-m {
     font-weight: 600;
@@ -299,11 +275,9 @@ h4.event-title {
     margin: 0;
     position: relative;
 }
-
 .gender-box .gender-m {
     padding-right: 14px;
 }
-
 .gender-box .gender-f:before,
 .gender-box .gender-m:before {
     content: "";
@@ -315,13 +289,11 @@ h4.event-title {
     left: -10px;
     top: -34px;
 }
-
 .gender-box .gender-f:before {
     width: 22px;
     height: 48px;
     background: url('../images/css_sprites.png') -10px -129px;
 }
-
 .more-events-btn {
     color: #8e9498;
     font-family: Lato_reg, sans-serif;
@@ -334,24 +306,19 @@ h4.event-title {
     left: 50%;
     transform: translate(-50%, 0);
 }
-
 .more-events-btn:hover {
     cursor: pointer;
 }
-
 .events-tabs {
     justify-content: center;
 }
-
 .event-filter {
     width: 100%;
     margin: 0;
 }
-
 .event-filter > div {
     margin-right: 7px;
 }
-
 .event-filter div #event-name {
     font-family: sans-serif;
     font-size: 16px;
@@ -361,7 +328,6 @@ h4.event-title {
     box-sizing: border-box;
     border: 1px solid #8e9498;
 }
-
 #customer-location {
     font-weight: 300;
     color: #272727;
@@ -372,16 +338,13 @@ h4.event-title {
     box-sizing: border-box;
     border: 1px solid #8e9498;
 }
-
 input#event-name:focus-visible,
 input#customer-location:focus-visible {
     outline: none;
 }
-
 .event-name-inpt[placeholder] {
     color: #8e9498;
 }
-
 .location-inpt:before {
     content: "";
     display: block;
@@ -393,7 +356,6 @@ input#customer-location:focus-visible {
     z-index: 100;
     position: absolute;
 }
-
 .location-inpt:after {
     position: absolute;
     content: "";
@@ -405,7 +367,6 @@ input#customer-location:focus-visible {
     top: 9px;
     right: 24px;
 }
-
 .calendar {
     content: "";
     display: inline-block;
@@ -416,13 +377,11 @@ input#customer-location:focus-visible {
     top: 5px;
     right: -99px;
 }
-
 /*Footer*/
 footer {
     background-color: #333333;
     padding: 35px 0;
 }
-
 .footer-nav-item {
     font-size: 14px;
     font-family: Lato_reg, sans-serif;
@@ -430,15 +389,12 @@ footer {
     margin: 0 10px 8px;
     position: relative;
 }
-
 .footer-nav-item:first-child {
     margin-left: 0;
 }
-
 .footer-nav-item:last-child {
     margin-right: 0;
 }
-
 .footer-nav-item:after {
     content: "";
     display: block;
@@ -449,19 +405,15 @@ footer {
     top: 10px;
     background-color: #8e9498;
 }
-
 .footer-nav-item:last-child:after {
     display: none;
 }
-
 .footer-nav-item .footer-nav-link {
     color: #8e9498;
 }
-
 .footer-nav-item .footer-nav-link:hover {
     color: #f4f4f4;
 }
-
 .footer-divider {
     display: block;
     margin-bottom: 20px;
@@ -469,38 +421,30 @@ footer {
     height: 2px;
     background: linear-gradient(to bottom, rgba(39, 39, 39, 1) 50%, #5b5b5b 100%);
 }
-
 .copyright-soc-media {
     margin-top: 23px;
 }
-
 p > a.copyright {
     text-align: center;
     font-family: Lato_reg, sans-serif;
     font-size: 14px;
 }
-
 .copyright-soc-media p.lgrey:hover a.copyright {
     color: #cccccc;
 }
-
 a.copyright span {
     font-weight: 600;
 }
-
 .soc-media-item {
     position: relative;
     margin: 0 20px;
 }
-
 .soc-media-item:first-child {
     margin-left: 0;
 }
-
 .soc-media-item:last-child {
     margin-right: 0;
 }
-
 .soc-media-link {
     content: "";
     position: absolute;
@@ -510,32 +454,27 @@ a.copyright span {
     left: 0;
     top: 0;
 }
-
 .soc-media-link.tw {
     background: url('../images/css_sprites.png') -106px -195px;
     width: 20px;
     height: 20px;
 }
-
 .soc-media-link.in {
     background: url('../images/css_sprites.png') -316px -125px;
     width: 20px;
     height: 20px;
 }
-
 .soc-media-link.yt {
     background: url('../images/css_sprites.png') -36px -237px;
     width: 20px;
     height: 20px;
 }
-
 .soc-media-link.oo {
     background: url('../images/css_sprites.png') -135px -195px;
     width: 20px;
     height: 20px;
     top: 7px;
 }
-
 .soc-media-link.wf {
     background: url('../images/css_sprites.png') -279px -125px;
     width: 20px;
@@ -672,7 +611,6 @@ a.copyright span {
         bottom: 11px;
     }
     .login-listed {
-        right: -100px;
         top: -45px;
         justify-content: space-between;
     }
@@ -837,13 +775,10 @@ a.copyright span {
     }
     ul.soc-media{
         margin-bottom: 34px;
-        left: 46%;
         position: absolute;
-        transform: translate(-46%, 0);
     }
     .soc-media-item {
         position: relative;
-        margin: 0 30px
     }
 }
 

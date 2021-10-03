@@ -210,10 +210,11 @@ main.container-fluid {
     position: absolute;
     display: block;
     content: "";
-    width: 100%;
+    width: 107%;
     height: 100px;
     background: no-repeat url('../images/css_sprites.png') -15px -9px;
-    bottom: 0;
+    bottom: -2px;
+    background-size: cover;
 }
 .event-img-label {
     font-family: Lato_reg, sans-serif;
@@ -513,13 +514,18 @@ a.copyright span {
 
     .img-e, .img-fb, .img-heart{
         top: 137px;
+        left: 4px;
     }
     .img-heart{
-        left: 282px;
+        left: 274px;
     }
     ul.soc-media{
         right: 60px;
         position: absolute;
+    }
+    .img-bottom-shadow {
+        width: 108%;
+        bottom: -11px;
     }
 }
 
@@ -583,6 +589,7 @@ a.copyright span {
     }
     .img-bottom-shadow{
         height: 87px;
+        bottom: -2px;
     }
     ul.soc-media{
         margin-right: 13px;
@@ -768,6 +775,10 @@ a.copyright span {
     }
     .img-fb, .img-e,.img-heart{
         display: none;
+    }
+    .img-bottom-shadow {
+        width: 106%;
+        bottom: -1px;
     }
     p.lgrey{
         margin: 44px 0 10px;

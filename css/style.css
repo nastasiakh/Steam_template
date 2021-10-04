@@ -78,6 +78,9 @@ li.nav-item a.nav-link:hover {
     color: white;
     font-weight: 600;
 }
+.get-listed, .login{
+    font-size: 16px;
+}
 .login {
     display: inline-flex;
     box-sizing: border-box;
@@ -182,6 +185,31 @@ main.container-fluid {
     background-size: cover;
     min-height: 176px;
     width: 100%;
+}
+#event-artclub,
+#event-artclub2{
+    background: url("../images/Layer 11.png") no-repeat;
+    background-size: cover;
+}
+#event-bocca,
+#event-bocca2{
+    background: url("../images/Layer 12.png") no-repeat;
+    background-size: cover;
+}
+#event-faringdon,
+#event-faringdon2{
+    background: url("../images/Layer 13.png") no-repeat;
+    background-size: cover;
+}
+#event-training,
+#event-training2{
+    background: url("../images/Layer 17.png") no-repeat;
+    background-size: cover;
+}
+#event-band,
+#event-band2{
+    background: url("../images/event6.png") no-repeat;
+    background-size: cover;
 }
 .img-fb,
 .img-heart,
@@ -424,6 +452,7 @@ footer {
 }
 .copyright-soc-media {
     margin-top: 23px;
+    justify-content: space-between;
 }
 p > a.copyright {
     text-align: center;
@@ -546,10 +575,7 @@ a.copyright span {
         outline: none;
         border: none;
     }
-    .login.white {
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
+    .login,
     .get-listed{
         font-size: 14px;
     }
@@ -645,7 +671,7 @@ a.copyright span {
     .logo-link:before{
         bottom: 12px;
     }
-    .login.white{
+    .login{
         margin-bottom: 10px;
     }
     .banner{
@@ -701,8 +727,7 @@ a.copyright span {
     }
     .copyright-soc-media {
         margin-top: 23px;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -790,6 +815,10 @@ a.copyright span {
     }
     .soc-media-item {
         position: relative;
+    }
+    .copyright-soc-media {
+        margin-top: 23px;
+        justify-content: center;
     }
 }
 
@@ -884,6 +913,10 @@ a.copyright span {
     }
     ul.soc-media {
         margin-bottom: 40px;
+    }
+    .copyright-soc-media {
+        margin-top: 23px;
+        justify-content: center;
     }
 }
 
